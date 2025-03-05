@@ -30,7 +30,7 @@ const Header = ({watchlist, removeFromWatchlist,  clearList}) => {
             </header>
 
 
-            {/* modificar y armar un componente */}
+            {/* modificar y armar un modal componente */}
             {
                 isOpen && (
                     <WatchlistModal

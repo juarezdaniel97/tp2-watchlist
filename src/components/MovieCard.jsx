@@ -1,6 +1,8 @@
 import React from 'react'
+import Button from './Button'
 
-const MovieCard = ({movie, onAdd}) => {
+const MovieCard = ({movie, addToWatchlist}) => {
+    
     return (
         <div className="bg-gray-700 p-4 rounded-lg shadow-lg text-center">
 
@@ -11,12 +13,12 @@ const MovieCard = ({movie, onAdd}) => {
             
             <h2 className="text-lg font-bold my-2">{movie.title}</h2>
             
-            <button
-                className="bg-blue-500 px-4 py-2 rounded-md hover:bg-blue-600 cursor-pointer"
-                onClick={() => onAdd(movie)}
-            >
-                Agregar a mi lista
-            </button>
+            <Button
+                style={'bg-blue-500 px-4 py-2 rounded-md hover:bg-blue-600 cursor-pointer'}
+                action={addToWatchlist}
+                name={'Agregar a mi lista'}
+                param={movie}
+            />
         </div>
     )
 }
