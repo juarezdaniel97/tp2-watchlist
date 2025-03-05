@@ -3,7 +3,12 @@ import React from 'react'
 const MovieCard = ({movie, onAdd}) => {
     return (
         <div className="bg-gray-700 p-4 rounded-lg shadow-lg text-center">
-            <img src={movie.image} alt={movie.title} className="w-full h-40 object-cover rounded-md" />
+
+            <img 
+                src={movie.image} 
+                alt={movie.title} 
+                className="w-62 h-52 rounded-md" />
+            
             <h2 className="text-lg font-bold my-2">{movie.title}</h2>
             
             <button

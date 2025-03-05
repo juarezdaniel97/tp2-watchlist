@@ -1,5 +1,8 @@
 export const movies = [
-    { id: 1, title: "El Curandero", image: "https://th.bing.com/th/id/OIP.KO7x3fE2KkAXhAUdZ4dt7QAAAA?rs=1&pid=ImgDetMain" },
-    { id: 2, title: "El Padrino", image: "https://via.placeholder.com/150" },
-    { id: 3, title: "The Matrix", image: "https://via.placeholder.com/150" },
+    { id: 1, title: "El Curandero", image: "/curandero.jpg" },
+    { id: 2, title: "Intensamente", image: "/intensamente.jpg" },
+    { id: 3, title: "Mufasa", image: "/mufasa.jpg" },
+    { id: 4, title: "Talentos Ocultos", image: "/talentos-ocultos.webp" },
+    { id: 5, title: "El niño que domó el viento", image: "/ninio-domo-viento.webp" },
+    { id: 6, title: "Smile", image: "/smile.jpg" },
 ];

@@ -6,7 +6,7 @@ import Body from '../components/Body'
 
 
 const Home = () => {
-    const { watchlist, addToWatchlist, removeFromWatchlist,clearList } = useWatchlist();
+    const { watchlist, addToWatchlist, removeFromWatchlist, clearList } = useWatchlist();
 
     // console.log('watchlist -->', watchlist);
     
@@ -15,7 +15,7 @@ const Home = () => {
             {/* Page */}
             <div className="min-h-screen bg-gray-800 text-white">
                 
-                {/* Header */}
+                {/* header */}
                 <Header
                     watchlist={watchlist}
                     removeFromWatchlist={removeFromWatchlist}
