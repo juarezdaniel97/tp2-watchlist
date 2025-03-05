@@ -3,6 +3,7 @@ import { useWatchlist } from '../hooks/useWatchlist'
 import { movies } from '../data/dataMovies' 
 import Header from '../components/Header'
 import Body from '../components/Body'
+import Footer from '../components/Footer'
 
 
 const Home = () => {
@@ -27,6 +28,9 @@ const Home = () => {
                     movies={movies}
                     addToWatchlist={addToWatchlist}
                 />
+
+                {/* footer */}
+                <Footer/>
             </div>
         </>
     )
