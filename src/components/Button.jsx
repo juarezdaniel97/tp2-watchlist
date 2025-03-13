@@ -2,7 +2,7 @@ import React from 'react'
 
 const Button = ({style, action, name, param = null}) => {
 
-    console.log('action -->', action);
+    //console.log('action -->', action);
 
     return (
         <button
