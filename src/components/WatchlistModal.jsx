@@ -2,10 +2,12 @@ import React from "react";
 import Button from "./Button";
 import { Trash2, X } from "lucide-react";
 
-const WatchlistModal = ({ watchlist, removeFromWatchlist, setIsOpen, clearList }) => {
+//importamos el contexto
+import { useWatchlistContext } from '../contexts/watchlistContext'
 
-    console.log('watchlist -->', watchlist);
-    
+const WatchlistModal = ( {setIsOpen} ) => {
+
+    const{ watchlist, removeFromWatchlist, clearList } = useWatchlistContext()
 
     return (
         <div className="fixed inset-0 flex items-center justify-center bg-gray-600 opacity-90 shadow-md">

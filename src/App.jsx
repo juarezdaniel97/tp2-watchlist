@@ -1,3 +1,4 @@
+import { useWatchlistContext, WatchlistProvider } from './contexts/watchlistContext'; //Importamos el conteto
 import Home from './pages/Home'
 import { Toaster } from 'react-hot-toast'
 
@@ -12,14 +13,19 @@ function App() {
       1.- Crear el contexto --> createContext
       2.- Proveer el contexto a traves de  la propiedad --> provider 
       3.- Consumir el contexto --> useContext
-  
   */
-  return (
+
+      // const { watchlist } = useWatchlistContext()
+
+      // console.log('watchlist-->', watchlist);
+      return (
+        
+        
+      <WatchlistProvider>
+        <Home/>
+        <Toaster/>
+      </WatchlistProvider>
     
-    <>
-      <Home/>
-      <Toaster/>
-    </>
   );
 }
 

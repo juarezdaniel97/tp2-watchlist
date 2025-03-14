@@ -3,15 +3,15 @@ import WatchlistModal from './WatchlistModal';
 import logoMovie from '../assets/movie-logo.png';
 
 
-const Header = ({watchlist, removeFromWatchlist,  clearList}) => {
+const Header = () => {
     
     const [isOpen, setIsOpen] = useState(false)
-    //const { watchlist, removeFromWatchlist, vaciarLista } = useWatchlist(); 
-
+    
 
     return (
         <>
             <header className="flex justify-between items-center bg-gray-900 p-4 text-white shadow-md">
+                
                 {/* Logo */}
                 <div className="text-xl font-bold">
                     <img 
@@ -34,10 +34,7 @@ const Header = ({watchlist, removeFromWatchlist,  clearList}) => {
             {
                 isOpen && (
                     <WatchlistModal
-                        watchlist={watchlist}
-                        removeFromWatchlist={removeFromWatchlist}
                         setIsOpen={setIsOpen}
-                        clearList={clearList}
                 />
                 )
             }

@@ -1,8 +1,13 @@
 import React from 'react'
 import Button from './Button'
 
-const MovieCard = ({movie, addToWatchlist}) => {
+//importamos el contexto
+import { useWatchlistContext } from "../contexts/watchlistContext";
+
+const MovieCard = ({movie}) => {
     
+    const { addToWatchlist } = useWatchlistContext()
+
     return (
         <div className="bg-gray-700 p-4 rounded-lg shadow-lg text-center">
 
