@@ -3,13 +3,9 @@ import { movies } from '../data/dataMovies'
 import Header from '../components/Header'
 import Body from '../components/Body'
 import Footer from '../components/Footer'
-import { useWatchlistContext } from '../contexts/watchlistContext'
 
 
 const Home = () => {
-    
-    const{ watchlist, addToWatchlist} = useWatchlistContext()
-    console.log('watchlist -->', watchlist);
     
     return (
         <>
@@ -20,9 +16,7 @@ const Home = () => {
                 <Header/>
 
                 {/* body */}
-                <Body
-                    movies={movies}
-                />
+                <Body/>
 
                 {/* footer */}
                 <Footer/>

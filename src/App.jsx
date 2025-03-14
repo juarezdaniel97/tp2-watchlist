@@ -1,7 +1,5 @@
-import { useWatchlistContext, WatchlistProvider } from './contexts/watchlistContext'; //Importamos el conteto
 import Home from './pages/Home'
 import { Toaster } from 'react-hot-toast'
-
 
 
 function App() {
@@ -19,13 +17,10 @@ function App() {
 
       // console.log('watchlist-->', watchlist);
       return (
-        
-        
-      <WatchlistProvider>
-        <Home/>
-        <Toaster/>
-      </WatchlistProvider>
-    
+        <>
+          <Home/>
+          <Toaster/>    
+        </>
   );
 }
 
